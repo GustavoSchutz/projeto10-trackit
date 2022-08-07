@@ -1,7 +1,7 @@
 import "./Login.css"
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// import LoginImg from ""
+import LogoImg from "../../assets/images/logo.svg"
 
 
 export default function Login() {
@@ -20,7 +20,7 @@ export default function Login() {
     return (
         <div className="background">
             <div className="logo">
-                <img src={require("../../assets/images/logo.svg").default} />
+                <img src={LogoImg} />
             </div>
             <div className="credentials">
                 <input type={"email"} placeholder="email" />
