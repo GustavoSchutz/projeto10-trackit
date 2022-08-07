@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.background {
+
+    height: calc(100vh - 10vh);
+    width: 100vw;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+
+}
+.logo img {
+    width: 40vw;
+}
+.credentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+.credentials input{
+    width: 80vw;
+    margin-bottom: .5rem;
+    height: 3rem;
+    text-indent: .5rem;
+    font-size: 1.2rem;
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+::placeholder {
+    color: #DBDBDB;
+}
+
+.loginButton, .signupButton {
+    background-color: #52B6FF;
+    width: 80vw;
+    height: 3rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.loginButtonText {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.signupLink {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: underline;
+    color: #52B6FF;
+}
+.passwordInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.passwordInput .ionIcon {
+    position: absolute;
+    margin-bottom: .5rem;
+    margin-right: .8rem;
+    font-size: 2rem;
+    color: #DBDBDB;
+}
