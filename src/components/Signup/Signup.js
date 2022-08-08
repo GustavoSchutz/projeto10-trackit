@@ -82,8 +82,11 @@ export default function Signup() {
 
             postSignup(newUserData).then( (res) => {
                 console.log(res.data);
-                navigate('/sucesso');
-            })
+                navigate('/');
+            }).catch((res) => {
+                alert(res.message);
+                setIsDisabled(false);
+            } )
 
         } else {
             alert("Sua falsa!")
