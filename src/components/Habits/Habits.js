@@ -10,10 +10,12 @@ import Habit from "./Habit";
 
 export default function Habits() {
     
+
+
     const [displayAddHabit, setDisplayAddHabit] = useState("newHabit hidden")
     const authObj = {};
     const [getHabitsListObj, setGetHabitsListObj] = useState({})
-    const { loginObj, setLoginObj, setUserToken, setHabitsList, userToken } = useContext(UserContext);
+    const { loginObj, setLoginObj, setUserToken, setHabitsList, habitsList, userToken } = useContext(UserContext);
     const [profilePicture, setProfilePicture] = useState("../assets/images/genericProfile.png")
 
     function renderHabitsList() {
@@ -53,6 +55,14 @@ export default function Habits() {
         setDisplayAddHabit("newHabit");
     }
 
+    function renderHabits() {
+
+    }
+
+    useEffect(() => {
+        
+    }, [habitsList])
+
     return(
         <>
             <Header setProfilePicture={setProfilePicture} profilePicture={profilePicture} />
@@ -62,7 +72,7 @@ export default function Habits() {
                     <div onClick={handleClickAddHabit} className="addHabit"><p className="iconPlus">+</p></div>
                 </div>
                 <NewHabit userToken={userToken} displayAddHabit={displayAddHabit} setDisplayAddHabit={setDisplayAddHabit} />
-                <Habit />
+                <Habit habitsList={habitsList} />
             </div>
             <Footer />
         </>

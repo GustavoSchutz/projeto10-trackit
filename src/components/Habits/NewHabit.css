@@ -44,7 +44,7 @@
 }
 .day p {
     font-size: 1.2rem;
-    color: #D4D4D4;
+    color: #DBDBDB;
 
 }
 .newHabitButtons {
@@ -77,4 +77,8 @@
 .cancelHabitButton p {
     color: #52B6FF;
     font-size: 1rem;
+}
+.selected {
+    background-color: #CFCFCF;
+    color: #ffffff;
 }

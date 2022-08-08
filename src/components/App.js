@@ -7,7 +7,18 @@ import Signup from "./Signup/Signup";
 
 export default function App() {
 
-    const [habitsList, setHabitsList] = useState({});
+    const [habitsList, setHabitsList] = useState([
+        {
+            id: 1,
+            name: "Nome do hábito",
+            days: [1, 3, 5]
+        },
+        {
+            id: 2,
+            name: "Nome do hábito 2",
+            days: [1, 3, 4, 6]
+        }
+    ]);
     
     const [loginObj, setLoginObj] = useState({});
 
