@@ -3,10 +3,10 @@
 
 
 .headerPadding {
-    height: 9vh;
+    height: 10vh;
 }
 .header {
-    height: 9vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -24,7 +24,7 @@
     color: #FFFFFF;
 }
 .footer {
-    height: 9vh;
+    height: 10vh;
     position: fixed;
     bottom: 0;
     width: 100vw;
@@ -36,7 +36,7 @@
 
 }
 .footerPadding {
-    height: 9vh;
+    height: 10vh;
 }
 .footerSides {
     color: #52B6FF;

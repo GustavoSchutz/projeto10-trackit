@@ -14,7 +14,12 @@ function postLogin(loginUserData) {
 }
 
 function getHabitsList(tokenAuth) {
-    const promise = axios.get(`${BASE_URL}/habits`, tokenAuth)
+    const promise = axios.get(`${BASE_URL}/habits`, tokenAuth);
+    return promise;
+}
+function postNewHabit(newHabitObj, tokenAuth) {
+    const promise = axios.post(`${BASE_URL}/habits`, newHabitObj, tokenAuth);
+    return promise;
 }
   
-  export { postSignup, postLogin, getHabitsList };
+  export { postSignup, postLogin, getHabitsList, postNewHabit };

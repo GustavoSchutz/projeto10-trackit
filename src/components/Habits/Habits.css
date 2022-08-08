@@ -2,7 +2,7 @@
 
 .backgroundHabits {
     background-color: #F2F2F2;
-    min-height: 82vh;
+    min-height: 80vh;
 }
 .myHabits {
     display: flex;
@@ -32,4 +32,8 @@
     font-size: 1.6rem ;
     font-family: 'Lexend Deca', sans-serif;
     padding-bottom: .1rem;
+}
+
+.hidden {
+    display: none;
 }

@@ -6,6 +6,8 @@ import Login from "./Login/Login"
 import Signup from "./Signup/Signup";
 
 export default function App() {
+
+    const [habitsList, setHabitsList] = useState({});
     
     const [loginObj, setLoginObj] = useState({});
 
@@ -13,7 +15,7 @@ export default function App() {
 
     return (
         <BrowserRouter>
-            <UserContext.Provider value={{userToken, setUserToken, loginObj, setLoginObj}}>
+            <UserContext.Provider value={{userToken, setUserToken, loginObj, setLoginObj, habitsList, setHabitsList}}>
                 <Routes>
                     <Route path="/" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />

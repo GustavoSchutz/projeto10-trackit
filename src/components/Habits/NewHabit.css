@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+.newHabit {
+    background-color: #ffffff;
+    margin: 0 1.4rem;
+    border-radius: .3rem;
+    font-family: 'Lexend Deca', sans-serif;
+
+    
+}
+.margin {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.margin input {
+    width: 95%;
+    margin-bottom: 1rem;
+    height: 2.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #D4D4D4;
+    border-radius: .3rem;
+    text-indent: .5rem;
+    
+}
+.week {
+    display: flex;
+    width: 98%;
+    margin-bottom: 1.6rem;
+    margin-left: .2rem;
+}
+.day {
+    border: 1px solid #D4D4D4;
+    margin-right: .5rem;
+    border-radius: .3rem;
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.day p {
+    font-size: 1.2rem;
+    color: #D4D4D4;
+
+}
+.newHabitButtons {
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.saveHabitButton {
+    width: 20vw;
+    height: 10vw;
+    background-color: #52B6FF;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saveHabitButton p {
+    color: #ffffff;
+    font-size: 1rem;
+}
+.cancelHabitButton {
+    width: 20vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.cancelHabitButton p {
+    color: #52B6FF;
+    font-size: 1rem;
+}
