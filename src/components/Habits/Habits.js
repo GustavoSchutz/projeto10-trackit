@@ -7,8 +7,18 @@ import "./Habits.css";
 
 export default function Habits() {
     
+    const authObj = {};
+    const [getHabitsListObj, setGetHabitsListObj] = useState({})
     const { loginObj, setLoginObj } = useContext(UserContext);
     const [profilePicture, setProfilePicture] = useState("../assets/images/genericProfile.png")
+    function renderHabitsList() {
+        authObj.header = {};
+        authObj.header.authorization = "bearer " + loginObj.token
+        console.log(authObj)
+        // getHabitsListObj()
+
+    }
+    renderHabitsList();
     
     useEffect(() => {
             setProfilePicture(loginObj.image);
@@ -21,7 +31,7 @@ export default function Habits() {
             <Header setProfilePicture={setProfilePicture} profilePicture={profilePicture} />
             <div className="backgroundHabits">
                 <div className="myHabits">
-                    <h2 className="myHabits">Meus hábitos</h2>
+                    <h2 className="myHabitsTitle">Meus hábitos</h2>
                     <div className="addHabit"><p className="iconPlus">+</p></div>
                 </div>
             </div>

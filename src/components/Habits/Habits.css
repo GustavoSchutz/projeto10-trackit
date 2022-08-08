@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 .backgroundHabits {
     background-color: #F2F2F2;
-    margin: 9vh 0;
     min-height: 82vh;
+}
+.myHabits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.4rem;
+}
+.myHabits h2 {
+    color: #126BA5;
+    font-size: 1.6rem;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+.addHabit {
+    background-color: #52B6FF;
+    width: 10vw;
+    height: 8vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+   
+}
+.addHabit p {
+    color: white;
+    font-size: 1.6rem ;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: .1rem;
 }
