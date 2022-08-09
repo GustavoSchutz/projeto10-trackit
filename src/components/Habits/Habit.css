@@ -9,11 +9,31 @@
     font-family: 'Lexend Deca', sans-serif;
     color: #666666;
 }
-.habit {
-    background-color: #ffffff;
+.weekHabit {
+    display: flex;
+    width: 98%;
+
 }
-.habit p {
+.habit {
+    position: ;
+    background-color: #ffffff;
+    margin: .7rem 1.6rem;
+    padding: 1rem;
+}
+.habit .habitP {
     color: #666666;
     font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 1rem;
 
+}
+.day p {
+    color: #D4D4D4;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+.x {
+    background-color: #CFCFCF;
+}
+.x p {
+    color: #ffffff;
 }
